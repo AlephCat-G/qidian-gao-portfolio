@@ -28,7 +28,7 @@ const About: React.FC = () => {
             <Grid container spacing={4}>
                 <Grid item xs={12} md={4}>
                     <Avatar
-                        alt="Qidian Gao"
+                        alt="Gwen Gao"
                         src={profilePic}
                         sx={{
                             width: 200,
@@ -45,7 +45,7 @@ const About: React.FC = () => {
                     </Typography>
 
                     <Typography variant="body1" paragraph>
-                        <strong>Name:</strong> <span style={{ color: '#000' }}>Qidian Gao</span>
+                        <strong>Name:</strong> <span style={{ color: '#000' }}>Gwen Gao</span>
                         <br />
                         <strong>Address:</strong> <span style={{ color: '#000' }}>788 W Marietta ST NW, Atlanta, GA</span>
                         <br />
