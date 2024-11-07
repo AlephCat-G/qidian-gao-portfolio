@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             }}
         >
             <Typography variant="body2" color="textSecondary">
-                © 2024 Qidian Gao. All rights reserved.
+                © 2024 Gwen Gao. All rights reserved.
             </Typography>
         </Box>
     );

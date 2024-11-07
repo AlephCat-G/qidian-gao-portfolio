@@ -47,7 +47,7 @@ const NavBar: React.FC = () => {
         >
             <Toolbar>
                 <Typography variant="h6" sx={{ flexGrow: 1, color: 'white' }}>
-                    Qidian Gao
+                    Gwen Gao
                 </Typography>
                 {isMobile ? (
                     <>
