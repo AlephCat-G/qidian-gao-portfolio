@@ -15,14 +15,16 @@
     "@types/node": "^16.18.119",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "framer-motion": "^11.11.11",
-    "nth-check": "^2.1.1",
-    "postcss": "^8.4.47",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "google-auth-library": "^9.14.2",
+    "googleapis": "^144.0.0",
+    "nodemailer": "^6.9.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-is": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "react-scripts": "^5.0.1",
-    "react-slick": "^0.30.2",
     "react-typing-effect": "^2.0.5",
     "slick-carousel": "^1.8.1",
     "typescript": "^4.9.5",
@@ -32,7 +34,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "send-email": "node sendEmail.js"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +56,26 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
     "@types/react-slick": "^0.23.13",
-    "@types/react-typing-effect": "^2.0.7"
+    "@types/react-typing-effect": "^2.0.7",
+    "babel-jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(axios)/)"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
   }
 }
